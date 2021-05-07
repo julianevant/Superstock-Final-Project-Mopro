@@ -1,14 +1,23 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 
-const index = () => {
+const splash = () => {
     return (
-        <View>
-            Logo
+        <View style={styles.page}>
+            <Logo/>
         </View>
-    )
-}
+    );
+};
 
-export default index
+export default splash;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    page: {
+      flex: 1,
+      backgroundColor: '#6A4206',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+  
+  });
+  
